@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Authors>Timmytimeless</Authors>
+    <Company>ques.io</Company>
+    <Description>Create PDF documents, fill forms based on conventional form field names and corresponding data-model property names. Extension methods for easy positioning of page elements such as text and images. Support generation of barcode 128 and 39.</Description>
+    <PackageTags>pdf, itextsharp, barcode</PackageTags>
+    <Version>1.0.0</Version>
+    <PackageReleaseNotes></PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp.LGPLv2.Core" Version="3.8.1" />
+  </ItemGroup>
+
+</Project>
