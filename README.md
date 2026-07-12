@@ -4,6 +4,20 @@ Timeless.PdfTools is a small C# wrapper around the older free-to-use version of 
 
 The main entry point is a fluent `PdfDocumentBuilder<TData>` API. It is especially useful when you need to place content at exact positions on a PDF, because layout rectangles can be specified in millimeters with `PdfLayoutRectangleMm`.
 
+## Installation
+
+Install the package from NuGet:
+
+```bash
+dotnet add package Timeless.PdfTools
+```
+
+Or with the NuGet Package Manager:
+
+```powershell
+Install-Package Timeless.PdfTools
+```
+
 ## Why this library exists
 
 iTextSharp is powerful, but its API is fairly low-level when the job is simply:
