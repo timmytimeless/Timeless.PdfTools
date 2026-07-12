@@ -1,17 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net8.0;net10.0</TargetFrameworks>
+    <LangVersion>10.0</LangVersion>
+    <PackageId>Timeless.PdfTools</PackageId>
     <Authors>Timmytimeless</Authors>
     <Company>ques.io</Company>
-    <Description>Create PDF documents, fill forms based on conventional form field names and corresponding data-model property names. Extension methods for easy positioning of page elements such as text and images. Support generation of barcode 128 and 39.</Description>
-    <PackageTags>pdf, itextsharp, barcode</PackageTags>
+    <Description>Fluent C# PDF tools around iTextSharp.LGPLv2.Core for filling templates, placing fields and barcodes with millimeter-based positioning, flattening forms, embedding fonts, protecting documents, and combining PDFs.</Description>
+    <PackageTags>pdf;itextsharp;barcode;forms;templates</PackageTags>
     <Version>1.0.0</Version>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>Initial public package.</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>LGPL-2.1-only</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/timmytimeless/Timeless.PdfTools</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/timmytimeless/Timeless.PdfTools.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="iTextSharp.LGPLv2.Core" Version="3.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
